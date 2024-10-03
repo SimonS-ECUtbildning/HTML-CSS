@@ -13,6 +13,12 @@
 
     --clr-primary: #6366F1;
     --clr-text-nav: var(--clr-gray-800);
+
+    --clr-bg-white: #FFF;
+    --clr-bg-blue: #F3F6FF;
+
+    --txt-lg: 1.125rem;
+    --txt-heading-
 }
 
 
@@ -67,11 +73,13 @@ a {
 
 .main-nav {
 
+    display: grid;
+    margin: .5rem 5rem;
+
     .container {
        width: 100%;
        display: flex;
-       justify-content: space-around;
-       padding-top: .5rem;
+       justify-content: space-between;
        
     }
 
@@ -154,6 +162,49 @@ a {
 
 /* Hero start */
 
+.hero {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient();
+    margin: 2rem 5rem;
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .headline {
+        font-size: ;
+    }
+
+    .discover-more {
+
+
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.305);
+
+        img {
+            padding: .5rem;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+    }
+
+    .hero-iphones {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+}
 
 /* Hero end */
