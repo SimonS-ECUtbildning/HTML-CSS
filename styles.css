@@ -12,8 +12,8 @@
     --clr-gray-900: #0B0F19;
 
     --clr-primary: #6366F1;
+    --clr-text-nav: var(--clr-gray-800);
 }
-
 
 
 * {
@@ -24,11 +24,61 @@
 
 body {
     font-family: "Manrope";
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-text-nav);
 
 }
 
-.container {
+.btn {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: .5em 1.4em;
+    margin: 1rem;
+    border: none;
+    border-radius: 6px;
 }
+
+.btn-primary {
+    background-color: var(--clr-primary);
+    color: white;
+    
+}
+
+/* Navbar start */
+
+.main-nav {
+
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1320px;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .btn {
+        img {
+            margin-right: .6em;
+        }
+    }
+
+
+
+    
+}
+
+/* Navbar end */
