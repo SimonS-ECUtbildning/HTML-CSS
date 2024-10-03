@@ -25,49 +25,118 @@
 body {
     font-family: "Manrope";
     font-weight: 600;
+    color: var(--clr-gray-800);
+    background-color: white;
 }
 
 a {
     text-decoration: none;
     color: var(--clr-text-nav);
 
+    &:hover {
+        color: var(--clr-primary);
+    }
+
 }
+
+/* Utility classes */
 
 .btn {
     display: flex;
+    text-align: center;
     padding: .5em 1.4em;
     margin: 1rem;
     border: none;
     border-radius: 6px;
+    flex-shrink: 0;
+    cursor: pointer;
 }
 
 .btn-primary {
     background-color: var(--clr-primary);
     color: white;
-    
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Navbar start */
 
 .main-nav {
 
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 1320px;
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       padding-top: .5rem;
+       
     }
 
-    .nav-link {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        gap: 2rem;
-        padding: 1rem;
+    .nav-right {
+        gap: 3rem;
+    }
+
+    .nav-left {
+        gap: 1rem;
+    }
+
+    .darkmode-toggle {
+
+        p {
+            padding: 1rem;
+        }
+
+        .toggle {
+            --_w: 46px;
+            --_h: 24px;
+        
+            position: relative;
+            flex-shrink: 0;
+            width: var(--_w);
+            height: var(--_h);
+            display: inline-block;
+        
+            input[type="checkbox"] {
+                width: 0;
+                height: 0;
+                opacity: 0;
+            }
+        
+            .slider {
+                position: absolute;
+                inset: 0;
+                background-color: var(--clr-gray-600);
+                border-radius: 100vw;
+                transition: all 250ms;
+                
+            }
+        
+            .slider::after {
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                content: '';
+                height: calc(100% - 4px);
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background-color: #FFF;
+        
+                transition: all 250ms ;
+        
+            }
+        
+            input[type="checkbox"]:checked ~ .slider::after {
+                left: calc(100% - var(--_h) + 2px);
+            }
+            input[type="checkbox"]:checked ~ .slider {
+                background-color: var(--clr-primary);
+            }
+
+        }
+        
     }
 
     .btn {
@@ -82,3 +151,9 @@ a {
 }
 
 /* Navbar end */
+
+/* Hero start */
+
+
+
+/* Hero end */
