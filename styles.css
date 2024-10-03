@@ -18,7 +18,6 @@
     --clr-bg-blue: #F3F6FF;
 
     --txt-lg: 1.125rem;
-    --txt-heading-
 }
 
 
@@ -33,6 +32,7 @@ body {
     font-weight: 600;
     color: var(--clr-gray-800);
     background-color: white;
+    line-height: 1.6;
 }
 
 a {
@@ -177,11 +177,16 @@ a {
     }
 
     .headline {
-        font-size: ;
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+
+    .subtitle {
+        color: var(--clr-gray-700);
+        font-weight: 400;
     }
 
     .discover-more {
-
 
         width: 2rem;
         height: 2rem;
