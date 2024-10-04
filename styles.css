@@ -32,7 +32,6 @@ body {
     font-weight: 600;
     color: var(--clr-gray-800);
     background-color: white;
-    line-height: 1.6;
 }
 
 a {
@@ -48,10 +47,7 @@ a {
 /* Utility classes */
 
 .btn {
-    display: flex;
-    text-align: center;
     padding: .5em 1.4em;
-    margin: 1rem;
     border: none;
     border-radius: 6px;
     flex-shrink: 0;
@@ -73,8 +69,12 @@ a {
 
 .main-nav {
 
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
     display: grid;
-    margin: .5rem 5rem;
+    margin-top: .5rem;
+    padding: 0 2rem;
 
     .container {
        width: 100%;
@@ -164,16 +164,26 @@ a {
 
 .hero {
     
+    background-image: linear-gradient(to top, hsl(239, 84%, 67%, 10%) 0%, hsl(293, 84%, 61%, 5%) 42%, hsl(225, 75%, 97%, 7%) 83%);
+
+}
+
+.hero-container {
+    
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 8rem;
+    width: 100%;
+    padding: 0 2rem;
+    gap: 9rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: linear-gradient();
-    margin: 2rem 5rem;
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
+    .discover-more-container {
+        display: grid;
+        align-items: center;
+        gap: 1rem;
+        /* margin: ; */
     }
 
     .headline {
@@ -186,20 +196,54 @@ a {
         font-weight: 400;
     }
 
-    .discover-more {
+    .store-buttons {
 
-        width: 2rem;
-        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding-bottom: 8rem;
+
+        button {
+
+            background-color: #0B0F19;
+            border-radius: 8px;
+ 
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+    }
+
+    .discover-more-btn {
+
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: white;
         border-radius: 50%;
         border: none;
         cursor: pointer;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.305);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.215);
+        color: var(--clr-gray-700);
+        margin: 2rem 0;
 
         img {
-            padding: .5rem;
+            padding: 1rem;
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+
+        span {
+            white-space: nowrap;
+            font-size: 0.875rem;
         }
 
     }
@@ -207,7 +251,7 @@ a {
     .hero-iphones {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: fill;
     }
     
 }
