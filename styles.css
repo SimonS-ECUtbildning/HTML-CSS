@@ -18,6 +18,7 @@
     --clr-bg-blue: #F3F6FF;
 
     --txt-lg: 1.125rem;
+
 }
 
 
@@ -63,6 +64,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.w1400 {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 /* Navbar start */
@@ -170,8 +176,6 @@ a {
 
 .hero-container {
     
-    max-width: 1400px;
-    margin: 0 auto;
     margin-top: 8rem;
     width: 100%;
     padding: 0 2rem;
@@ -183,7 +187,6 @@ a {
         display: grid;
         align-items: center;
         gap: 1rem;
-        /* margin: ; */
     }
 
     .headline {
@@ -199,7 +202,6 @@ a {
     .store-buttons {
 
         display: flex;
-        align-items: center;
         justify-content: flex-start;
         gap: 2rem;
         padding-bottom: 8rem;
@@ -208,12 +210,13 @@ a {
 
             background-color: #0B0F19;
             border-radius: 8px;
+            border: none;
  
-            
             img {
-                width: 100%;
-                height: 100%;
+                width: 80%;
+                height: 80%;
                 object-fit: contain;
+                margin:.3rem;
             }
         }
 
@@ -257,3 +260,9 @@ a {
 }
 
 /* Hero end */
+
+/* App Features section start */
+
+
+
+/* App Features section end */
