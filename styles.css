@@ -75,14 +75,10 @@ a {
 
 .main-nav {
 
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 100%;
-    display: grid;
     margin-top: .5rem;
     padding: 0 2rem;
 
-    .container {
+    .nav-container {
        width: 100%;
        display: flex;
        justify-content: space-between;
@@ -96,8 +92,8 @@ a {
     .nav-left {
         gap: 1rem;
     }
-
-    .darkmode-toggle {
+        
+    .darkmode-toggle {  /* Code borrowed from Joakim's explanation video. */
 
         p {
             padding: 1rem;
@@ -263,6 +259,13 @@ a {
 
 /* App Features section start */
 
+.partner-logos {
 
+    margin-top: 3rem;
+
+    img {
+        padding: 1rem;
+    }
+}
 
 /* App Features section end */
