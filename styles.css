@@ -259,6 +259,12 @@ a {
 
 /* App Features section start */
 
+.app-features {
+
+    background-color: var(--clr-bg-white);
+
+}
+
 .partner-logos {
 
     margin-top: 3rem;
@@ -268,4 +274,25 @@ a {
     }
 }
 
+.features-container {
+    margin: 1rem;
+    margin-top: 3rem;
+}
+
+.feature-list {
+    display: grid;
+    /* grid-template-rows:  */
+}
+
+.feature-list-item {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
 /* App Features section end */
+
+/* How Does It Work? section start */
+
+
+
+/* How Does It Work? section end */
