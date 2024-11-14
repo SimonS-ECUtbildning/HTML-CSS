@@ -18,7 +18,13 @@
     --clr-bg-blue: #F3F6FF;
 
     --txt-lg: 1.125rem;
+    --txt-m: ;
+    --txt-h2: 2.5rem;
+    --txt-h3: 1.5rem;
+    --txt-s: 0.875rem;
+    --txt-body-l: 1.125rem;
 
+    --section-margin: ;
 }
 
 
@@ -30,8 +36,6 @@
 
 body {
     font-family: "Manrope";
-    font-weight: 600;
-    color: var(--clr-gray-800);
     background-color: white;
 }
 
@@ -44,6 +48,7 @@ a {
     }
 
 }
+
 
 /* Utility classes */
 
@@ -188,6 +193,7 @@ a {
     .headline {
         font-size: 3.5rem;
         font-weight: 900;
+        margin-bottom: 1rem;
     }
 
     .subtitle {
@@ -257,18 +263,18 @@ a {
 
 /* Hero end */
 
+
+
+
 /* App Features section start */
 
 .app-features {
-
-    background-color: var(--clr-bg-white);
-
+    margin: 5rem auto;
 }
 
 .partner-logos {
 
-    margin-top: 3rem;
-
+    margin-bottom: 1rem;
     img {
         padding: 1rem;
     }
@@ -277,22 +283,107 @@ a {
 .features-container {
     margin: 1rem;
     margin-top: 3rem;
+    gap: 9rem;
 }
 
 .feature-list {
     display: grid;
-    /* grid-template-rows:  */
+    gap: 2rem;
+}
+
+.feature-list-title {
+    
+    h2 {
+        font-size: var(--txt-h2);
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: var(--txt-body-l);
+        color: var(--clr-gray-600);
+    }
+}
+
+.feature-list-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 8rem;
+    list-style: none;
 }
 
 .feature-list-item {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: 1fr;
+    margin-bottom: 3rem;
+
+    img {}
+
+    h3 {
+        margin: 1rem 0;
+    }
+
+    p {
+        color: var(--clr-gray-700);
+    }
 }
 
 /* App Features section end */
 
+
+
+
+
+
+
 /* How Does It Work? section start */
 
+.howdoesitwork {
+    background-color: var(--clr-bg-blue);
+    padding: 2rem;
+}
 
+.howdoesitwork-container {
+    margin: 3rem auto;
+
+    h2 {
+        font-size: var(--txt-h2);
+    }
+}
+
+.howdoesitwork-imgs {
+    gap: 5rem;
+    margin: 2rem;
+}
+
+.howdoesitwork-text {
+
+    padding-top: 1rem;
+    text-align: center;
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
 
 /* How Does It Work? section end */
+
+
+
+.transfers-and-banking {
+    background-color: var(--clr-bg-white);
+}
+
+
+
+.testimonials {
+    background-color: var(--clr-bg-blue);
+}
+
+
+.footer {
+    margin: 4rem auto;
+
+    p {
+      font-size: 0.875rem;  
+    }
+}
