@@ -368,17 +368,52 @@ a {
 /* How Does It Work? section end */
 
 
+/* Transfers and Banking section start */
 
-.transfers-and-banking {
-    background-color: var(--clr-bg-white);
+.transfers-and-banking-wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 4rem;
+
+    button {
+        padding: .7rem 2rem;
+    }
 }
 
+.transfers-text {
+    list-style-image: url(/images/icons/bx-check-circle.svg);
+    padding: 1rem 0;
 
+    ul {
+        margin: 2rem 1.5rem;
+    }
+
+    li {
+        padding-bottom: .7rem;
+        color: var(--clr-gray-700);
+    }
+
+    h2 {
+        font-size: var(--txt-h3);
+    }
+
+}
+
+.banking-items {
+    padding: 2rem auto;
+}
+
+/* Transfers and Banking section end */
+
+/* Testimonials section start */
 
 .testimonials {
     background-color: var(--clr-bg-blue);
 }
 
+/* Testimonials section end */
 
 .footer {
     margin: 4rem auto;
