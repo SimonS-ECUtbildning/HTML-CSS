@@ -65,6 +65,30 @@ a {
     color: white;
 }
 
+.btn-circle {
+    
+        width: 3rem;
+        height: 3rem;
+        background-color: white;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.215);
+        color: var(--clr-gray-700);
+        margin: 1rem 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        span {
+            white-space: nowrap;
+            font-size: 0.875rem;
+        }
+    
+}
+
 .flex-center {
     display: flex;
     align-items: center;
@@ -292,6 +316,8 @@ a {
 }
 
 .feature-list-title {
+
+    padding-right: 1rem;
     
     h2 {
         font-size: var(--txt-h2);
@@ -308,14 +334,12 @@ a {
     grid-template-columns: 1fr 1fr;
     margin-right: 8rem;
     list-style: none;
+    
 }
 
 .feature-list-item {
-    display: grid;
-    grid-template-rows: 1fr;
-    margin-bottom: 3rem;
 
-    img {}
+    margin-bottom: 3rem;
 
     h3 {
         margin: 1rem 0;
@@ -323,15 +347,11 @@ a {
 
     p {
         color: var(--clr-gray-700);
+        padding-right: 3rem;
     }
 }
 
 /* App Features section end */
-
-
-
-
-
 
 
 /* How Does It Work? section start */
@@ -384,10 +404,11 @@ a {
 
 .transfers-text {
     list-style-image: url(/images/icons/bx-check-circle.svg);
-    padding: 1rem 0;
+    list-style-position: inside;
+    padding: 1rem auto;
 
     ul {
-        margin: 2rem 1.5rem;
+        margin: 2rem 1rem;
     }
 
     li {
@@ -402,7 +423,9 @@ a {
 }
 
 .banking-items {
-    padding: 2rem auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
 }
 
 /* Transfers and Banking section end */
@@ -411,9 +434,81 @@ a {
 
 .testimonials {
     background-color: var(--clr-bg-blue);
+    padding: 4rem;
+}
+
+.testimonials-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.testimonial-card {
+    background-color: var(--clr-bg-white);
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: 6px 6px 6px #9397ad2d;
+    max-width: 350px;
+}
+
+.user-name {
+    font-weight: 700;
 }
 
 /* Testimonials section end */
+
+/* FAQ section start */
+
+.FAQ {
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+
+.FAQ-card {
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    margin-top: 1rem; 
+}
+
+.FAQ-contact {
+    padding-right: 4rem;
+    
+}
+
+.accordion-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 3px 7px 2px #9397ad2d;
+    padding: .3rem 1rem;
+
+    button {
+        background-color: var(--clr-gray-100);
+    }
+}
+
+.accordion-title {
+    padding-right: 1rem;
+    font-weight: 500;
+}
+
+.accordion-item-open {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* FAQ section end */
 
 .footer {
     margin: 4rem auto;
