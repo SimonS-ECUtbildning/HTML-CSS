@@ -27,7 +27,6 @@
     --section-margin: ;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +47,6 @@ a {
     }
 
 }
-
 
 /* Utility classes */
 
@@ -287,9 +285,6 @@ a {
 
 /* Hero end */
 
-
-
-
 /* App Features section start */
 
 .app-features {
@@ -353,7 +348,6 @@ a {
 
 /* App Features section end */
 
-
 /* How Does It Work? section start */
 
 .howdoesitwork {
@@ -372,6 +366,7 @@ a {
 .howdoesitwork-imgs {
     gap: 5rem;
     margin: 2rem;
+    padding: 2rem 0;
 }
 
 .howdoesitwork-text {
@@ -387,7 +382,6 @@ a {
 
 /* How Does It Work? section end */
 
-
 /* Transfers and Banking section start */
 
 .transfers-and-banking-wrapper {
@@ -395,7 +389,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin: 4rem;
+    margin: 6rem;
 
     button {
         padding: .7rem 2rem;
@@ -404,11 +398,12 @@ a {
 
 .transfers-text {
     list-style-image: url(/images/icons/bx-check-circle.svg);
-    list-style-position: inside;
-    padding: 1rem auto;
+    margin-right: 6rem;
+    padding: 4rem 0;
 
+  
     ul {
-        margin: 2rem 1rem;
+        margin: 2rem 1.5rem;
     }
 
     li {
@@ -417,14 +412,29 @@ a {
     }
 
     h2 {
-        font-size: var(--txt-h3);
+        font-size: 2rem;
+    }
+
+}
+
+.banking {
+    margin-right: 3rem;
+    margin-top: 4rem;
+    
+    h2 {
+        font-size: 2rem;
     }
 
 }
 
 .banking-items {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
+    margin: 2rem 0;
+    padding-right: 2rem;
+    
+    img {
+        padding-bottom: 1rem;
+    }
     
 }
 
@@ -434,7 +444,12 @@ a {
 
 .testimonials {
     background-color: var(--clr-bg-blue);
-    padding: 4rem;
+    padding: 6rem;
+
+    h2 {
+        padding-right: 3rem;
+    }
+    
 }
 
 .testimonials-wrapper {
@@ -447,16 +462,30 @@ a {
 }
 
 .testimonial-card {
+    display: grid;
+    gap: 2rem;
     background-color: var(--clr-bg-white);
-    padding: 2rem;
+    padding: 1.5rem;
     margin-top: 1rem;
     border-radius: 1rem;
     box-shadow: 6px 6px 6px #9397ad2d;
-    max-width: 350px;
+    max-width: 400px;
+}
+
+.testimonial-user {
+    display: flex;
+    padding-top: 2rem;
+    img {
+        padding-right: 1rem;
+    }
 }
 
 .user-name {
     font-weight: 700;
+}
+
+.user {
+    display: grid;
 }
 
 /* Testimonials section end */
@@ -464,33 +493,38 @@ a {
 /* FAQ section start */
 
 .FAQ {
-
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    padding-top: 6rem;
+    padding: 6rem 0;
+
+    p {
+        padding: 2rem 0;
+    }
+}
+
+.FAQ-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .FAQ-card {
-    padding: 1rem;
-    border: 1px solid;
-    border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
     margin-top: 1rem; 
-}
-
-.FAQ-contact {
-    padding-right: 4rem;
-    
+    padding: 2rem 1rem;
+    border: 1px solid #9397ad2d;
+    border-radius: 1rem;
+    max-width: 200px;
+    aspect-ratio: 1;
 }
 
 .accordion-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
+    margin: 1rem 0;
     border-radius: 1rem;
     box-shadow: 2px 3px 7px 2px #9397ad2d;
     padding: .3rem 1rem;
+    max-width: 700px;
 
     button {
         background-color: var(--clr-gray-100);
@@ -498,17 +532,65 @@ a {
 }
 
 .accordion-title {
-    padding-right: 1rem;
-    font-weight: 500;
-}
-
-.accordion-item-open {
-    display: grid;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    
 }
 
 /* FAQ section end */
+
+/* Newsletter subscription section start */
+
+
+.newsletter-wrapper {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--clr-bg-blue);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+}
+
+.newsletter-text {
+    margin: 1rem;
+
+    img {
+        padding-right: 2rem;
+    }
+}
+
+.subscribe-field {
+    margin-right: 4rem;
+}
+
+.subscribe-form {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.email-input {
+    flex: 1;
+    border: 2px solid var(--clr-gray-400);
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    min-width: 400px;
+    font-size: 1rem;
+
+    input {
+        color: var(--clr-gray-400);
+    }
+}
+
+.subscribe-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+/* Newletter subscription section end */
 
 .footer {
     margin: 4rem auto;
