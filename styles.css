@@ -587,11 +587,6 @@ a {
     font-size: 1rem;
     border: none;
     outline: none;
-
-    input type="email" {
-        color: #565973;
-    }
-
 }
 
 .subscribe-btn {
