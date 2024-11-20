@@ -70,6 +70,7 @@ a {
         border-radius: 50%;
         border: none;
         margin: 1rem 0;
+        cursor: pointer;
 
         img {
             width: 100%;
@@ -243,7 +244,6 @@ a {
 }
 
 .discover-more-btn {
-
 
     display: flex;
     align-items: center;
